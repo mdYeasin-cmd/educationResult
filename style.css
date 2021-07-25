@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+body {
+    background-color: #EEEEEE;
+    width: 100%;
+}
+.container {
+    max-width: 645px;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+/* Header Start From Here */
+.logo__site {
+    float: left;
+    padding: 15px;
+    width: 25%;
+}
+.logo {
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    margin: 8px 0 8px 8px;
+}
+.head__title--side {
+    float: left;
+    padding: 8px 8px 8px 2px;
+    width: 73%;
+}
+.heading__title .main__title {
+    border-radius: 0 5px 0 0;
+}
+.heading__title h2 {
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #007814;
+    color: white;
+    padding: 12px 0 12px 5px;
+}
+.heading__title p {
+    background-color: #67AF63;
+    height: 21px;
+    padding: 5px 5px 0 0;
+}
+.heading__title p a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+.heading__title p a:hover {
+    color: green;
+}
+/* Header End From Here */
+/* Form Section Start Here */
+.form-row-container {
+    font-family: sans-serif;
+    margin: 10px 0 40px 0;
+}
+fieldset {
+    width: 80%;
+    margin: 0 auto;
+}
+form {
+    width: 98%;
+    margin: 0 auto;
+    padding: 20px;
+}
+form .formItemContainer {
+    height: 220px;
+    padding: 10px 0 10px 0;    
+}
+.forLevel {
+    float: left;
+    width: 32%;
+}
+.forLevel label {
+    display: block;
+    height: 23px;
+    margin-bottom: 6px;
+    padding: 3px 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.forLevel .semicolone {
+    float: right;
+}
+.forInput {
+    float: right;
+    width: 64%;
+}
+form input[type=text], select {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: #F4F0F2;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+form .button {
+    float: right;
+    padding: 2px;
+}
+#submit-btn {
+    margin-right: 5px;
+}
+.greenLine::after {
+    content:'';
+    width: 98%;
+    height: 5px;
+    background-color: #67AF63;
+    margin: 0 auto;
+}
+/* Form Section End Here */
+/* Footer Section Start here */
+.footer-row-container {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    margin-bottom: 5px;
+    border-radius: 0 0 5px 5px;
+}
+.footer-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+.footer-left p {
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 4px;
+}
+.footer-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.footer-right span {
+    font-size: 0.8rem;
+    color: gray;
+    margin-right: 5px;
+}
+.footer-right img {
+    margin: 10px;
+}
+.footer-row-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Footer Section End here */
+/* Responsive part start here */
+@media screen and (max-width: 540px) {
+    .footer-left {
+        float: none;
+        justify-content: center;
+    }
+    .footer-right {
+        float: none;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 541px) {
+    
+    .heading__title h2 {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        background-color: #007814;
+        color: white;
+        padding: 8px 0 8px 5px;
+    }
+    .heading__title p {
+        height: 22px;
+    }
+}
+/* Responsive part end here */
